@@ -11,10 +11,15 @@ You need to pick your own prime numbers unique to your application. For suggesti
 PrimID uses only three functions.
 ```javascript
 var primid=require("primid");
+// Get a new generator using desired settings (should be unique settings per application).
+// These should be prime numbers!
+var generator=primid(prime,inverse[,xor]);
 
-var generator=primid(prime,inverse[,xor]); // Get a new generator using desired settings (should be unique settings per application). These should be prime numbers!
-var hash=generator.encode(some_number); // Encode a number, get a integer based hash
-var number=generator.decode(hash); // Decode a hash, get back a number
+// Encode a number, get a integer based hash
+var hash=generator.encode(some_number);
+
+// Decode a hash, get back a number
+var number=generator.decode(hash);
 ```
 
 # Usage
@@ -32,5 +37,5 @@ console.log("Hash of 15 is "+hash);
 4. Turn the hash back into an id internally
 ```javascript
 let id=generator.decode(hash);
-console.log("Hash of 15 is "+hash+" and translates back to "+id"); // "Hash of 15 is xyz and translates back to 15"
+console.log("Hash of 15 is "+hash+" and translates back to "+id");
 ```
