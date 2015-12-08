@@ -1,0 +1,33 @@
+{
+  "name": "primid",
+  "version": "0.0.1",
+  "description": "Transform your internal id's to obfuscated integers based hashes",
+	"keywords": [
+		"uuid",
+    "id",
+    "obfruscate",
+    "hash",
+    "integer hash",
+    "id hash",
+    "integer based hash",
+    "integer based id hash"
+    "transform to hash",
+    "node hash id",
+    "fast node hash"
+	],
+	"main": "lib/index.js",
+	"author": "Kurt Stolle",
+	"version": "1.0.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kurt-stolle/primid.git"
+	},
+	"bugs": {
+		"url": "https://github.com/kurt-stolle/primid/issues"
+	},
+	"licenses": [{
+		"type": "GPL",
+		"url": "https://github.com/kurt-stolle/primid/blob/master/LICENSE"
+	}],
+  "dependencies": { }
+}
