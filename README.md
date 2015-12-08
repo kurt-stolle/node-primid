@@ -9,7 +9,7 @@ You need to pick your own prime numbers unique to your application. For suggesti
 
 # Methods
 PrimID uses only three functions.
-```text/javascript
+```javascript
 var primid=require("primid");
 
 var generator=primid(prime,inverse[,xor]); // Get a new generator using desired settings (should be unique settings per application). These should be prime numbers!
@@ -19,23 +19,18 @@ var number=generator.decode(hash); // Decode a hash, get back a number
 
 # Usage
 1. Create a new `primid` instance using
-```text/javascript
+```javascript
 var primid = require('primid');
 var generator = primid(1580030173, 59260789, 1163945558);
-...
 ```
 2. Generate a hash
-```text/javascript
-...
+```javascript
 let hash=generator.encode(15);
 console.log("Hash of 15 is "+hash);
-...
 ```
 3. Use the hash as output of your API or other system.
 4. Turn the hash back into an id internally
-```text/javascript
-...
+```javascript
 let id=generator.decode(hash);
 console.log("Hash of 15 is "+hash+" and translates back to "+id"); // "Hash of 15 is xyz and translates back to 15"
-...
 ```
