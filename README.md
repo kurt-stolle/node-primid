@@ -28,14 +28,12 @@ var number=generator.decode(hash);
 var primid = require('primid');
 var generator = primid(1580030173, 59260789, 1163945558);
 ```
-2. Generate a hash
+2. Generate a hash, in this example we want to obfruscate the value `15`
 ```javascript
 let hash=generator.encode(15);
-console.log("Hash of 15 is "+hash);
 ```
 3. Use the hash as output of your API or other system.
-4. Turn the hash back into an id internally
+4. Turn the hash back into a number. If the hash from the example above is used, then `id` is equal to `15`.
 ```javascript
 let id=generator.decode(hash);
-console.log("Hash of 15 is "+hash+" and translates back to "+id");
 ```
