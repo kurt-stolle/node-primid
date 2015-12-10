@@ -4,8 +4,8 @@ This has the advantage that is is incredibly fast compared to other methods.
 
 PrimID is written in pure javascript.
 
-# Numbers
-You need to pick your own prime numbers unique to your application. For suggestions, look at [this list](http://primes.utm.edu/lists/small/millions/).
+# Installation
+`npm install primid`
 
 # Methods
 PrimID uses only three functions.
@@ -21,6 +21,9 @@ var hash=generator.encode(some_number);
 // Decode a hash, get back a number
 var number=generator.decode(hash);
 ```
+
+# Numbers
+You need to pick your own prime numbers unique to your application. For suggestions, look at [this list](http://primes.utm.edu/lists/small/millions/).
 
 # Usage
 1. Create a new `primid` instance using
