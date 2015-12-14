@@ -1,6 +1,6 @@
 {
   "name": "primid",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Transform your internal id's to obfuscated integers based hashes",
   "keywords": [
     "uuid",
@@ -30,5 +30,7 @@
       "url": "https://github.com/kurt-stolle/primid/blob/master/LICENSE"
     }
   ],
-  "dependencies": {}
+  "dependencies": {
+    "big-integer": "^1.6.8"
+  }
 }
