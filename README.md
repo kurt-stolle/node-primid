@@ -40,3 +40,7 @@ let hash=generator.encode(15);
 ```javascript
 let id=generator.decode(hash);
 ```
+
+# Other implementations
+There exist also the following implementations of this principle:
+- Go language library at https://github.com/kurt-stolle/go-primid
